@@ -109,8 +109,10 @@ The following feeds were enabled to ingest high-quality threat intelligence:
 - Wazuh uses this key to fetch IOCs securely  
 - Indicators include malicious IP addresses, domains, and URLs  
 
-📸 **Screenshot:**  
-`MISP API Key Configuration – Add Link Here`
+📸 MISP API & Wazuh Integration:
+- [Generate MISP API Key](screenshots/misp/19-get-api-key.png)
+
+
 
 ---
 
@@ -120,8 +122,11 @@ The following feeds were enabled to ingest high-quality threat intelligence:
 - Custom rules added to generate alerts on IOC matches  
 - Wazuh Manager restarted to apply changes  
 
-📸 **Screenshot:**  
-`Wazuh MISP Integration Config – Add Link Here`
+📸 MISP API & Wazuh Integration:
+- [Custom MISP Integration Script Content](screenshots/misp/21-content-of-custom-misp.png)
+- [Add Integration Block in ossec.conf](screenshots/misp/22-add-integration-block-in-ossec.conf.png)
+- [Restart Wazuh Manager & Check Status](screenshots/misp/23-restart-manager-and-status.png)
+- [Create Custom MISP Rules in Wazuh](screenshots/misp/24-create-rules.png)
 
 ---
 
