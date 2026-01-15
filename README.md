@@ -1,6 +1,7 @@
-# 🔐 Wazuh + MISP + Cowrie Honeypot Integration (SOC Lab)
+# SOC Lab: Wazuh SIEM Integration with MISP Threat Intelligence & Cowrie Honeypot
 
-## 📌 Project Overview
+
+## Project Overview
 This project demonstrates a real-world **Security Operations Center (SOC)** workflow by integrating:
 
 - **Wazuh SIEM** for log collection, correlation, and alerting  
@@ -19,6 +20,16 @@ The objective is to detect live attacks, enrich alerts with threat intelligence,
 - Understand how threat intelligence and deception improve SOC detection and response  
 
 ---
+## 🛠️ Skills Demonstrated
+- SIEM deployment and log correlation (Wazuh)
+- Threat intelligence ingestion and IOC enrichment (MISP)
+- Honeypot deployment and deception-based detection
+- Custom decoder and rule creation
+- Attack simulation and adversary behavior analysis
+- SOC alert triage and severity classification
+- Linux system administration (Ubuntu Server)
+- Incident detection lifecycle (Detect → Enrich → Analyze)
+
 
 ## 🏗️ Architecture Overview
 This lab simulates an enterprise SOC architecture where external intelligence and live attack data are combined to improve detection accuracy.
@@ -178,6 +189,8 @@ The following feeds were enabled to ingest high-quality threat intelligence:
 ---
 
 ## 🚨 Detection & Alerting in Wazuh
+This section demonstrates how raw honeypot logs were transformed into actionable SOC alerts through decoding, rule logic, and threat intelligence correlation.
+
 
 ### 🔹 Honeypot Detection
 - Cowrie logs decoded using custom decoders  
@@ -245,13 +258,17 @@ This integration demonstrates how:
 ---
 
 ## 📄 Full Documentation
-Full internship report available in:
+A detailed step-by-step implementation report, configurations, and explanations are available in:
+
+📄 **Full Documentation Report**  
+(See `Full Documentation Report.pdf` in this repository)
+
 
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Create by:
 **Ishtiaq “Wolf” Rashid**  
-Cybersecurity | SOC Analyst (Entry-Level)  
-📍 Pakistan
+Cybersecurity | SOC Analyst Aspirant 
+Pakistan
 
