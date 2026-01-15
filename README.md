@@ -31,8 +31,10 @@ This lab simulates an enterprise SOC architecture where external intelligence an
 - MISP enriches alerts with threat intelligence (malicious IPs, domains)  
 - Correlated alerts are visualized in the Wazuh Dashboard  
 
-📸 **Screenshot:**  
-`Architecture Diagram – Add Link Here`
+📸 Architecture Diagrams:
+- [Detailed SOC Architecture Diagram](screenshots/architecture/01-daigram.png)
+- [Simplified SOC Architecture Diagram](screenshots/architecture/02-simple daigram.png)
+
 
 ---
 
@@ -57,8 +59,9 @@ This lab simulates an enterprise SOC architecture where external intelligence an
 | Ubuntu Server | MISP (Docker) |
 | Kali Linux | Attacker Machine |
 
-📸 **Screenshot:**  
-`VirtualBox Running Machines – Add Link Here`
+📸 Lab Environment:
+- [VirtualBox Lab Environment Setup](screenshots/environment/03-enviremantal setup.png)
+
 
 ---
 
@@ -69,8 +72,21 @@ This lab simulates an enterprise SOC architecture where external intelligence an
 - Docker used for isolation, stability, and easy maintenance  
 - Web interface accessed via local lab IP  
 
-📸 **Screenshot:**  
-`MISP Web Interface – Add Link Here`
+📸 MISP Installation & Setup:
+- [Update Ubuntu Server](screenshots/misp/04-update-ubuntu-server.png)
+- [Install Docker](screenshots/misp/05-install-docker.png)
+- [Install Docker & Docker Compose](screenshots/misp/06-install-docker-and-docker-compose.png)
+- [Check Docker Service Status](screenshots/misp/07-check-docker-status.png)
+- [Run Docker Test Image](screenshots/misp/08-run-docker-image.png)
+- [Docker Version Verification](screenshots/misp/09-docker-version.png)
+- [Install MISP (Docker)](screenshots/misp/10-install-misp.png)
+- [Configure .env File](screenshots/misp/11-configure-envfile.png)
+- [.env File Configuration](screenshots/misp/12-env-file.png)
+- [Pull MISP Docker Images](screenshots/misp/13-pull-docker.png)
+- [Start MISP Containers](screenshots/misp/14-up-docker.png)
+- [Verify Running Containers (docker ps)](screenshots/misp/15-docker-ps.png)
+- [Access MISP Web Interface](screenshots/misp/16-misp-access.png)
+
 
 ---
 
@@ -81,8 +97,10 @@ The following feeds were enabled to ingest high-quality threat intelligence:
 - **Feodo Tracker** – Banking trojans (Dridex / Feodo)  
 - **URLhaus** – Malicious URLs and malware distribution  
 
-📸 **Screenshot:**  
-`MISP Feeds Enabled – Add Link Here`
+📸 MISP Threat Feeds:
+- [Enable Threat Feed – Botvrij / Feodo / URLhaus](screenshots/misp/17-enable-feed.png)
+- [Threat Feed Enabled (Additional View)](screenshots/misp/18-enable-feed-2.png)
+
 
 ---
 
@@ -114,8 +132,15 @@ The following feeds were enabled to ingest high-quality threat intelligence:
 - SSH service enabled on port `2222`  
 - Python virtual environment used for dependency isolation  
 
-📸 **Screenshot:**  
-`Cowrie Running Status – Add Link Here`
+📸 Cowrie Installation & Setup:
+- [Update Ubuntu Server for Cowrie](screenshots/cowrie/25-update-ubuntu-server-for-cowrie.png)
+- [Install Python Requirements](screenshots/cowrie/26-install-python-requriements.png)
+- [Clone Cowrie Repository](screenshots/cowrie/27-clone-cowrie.png)
+- [Create & Activate Virtual Environment](screenshots/cowrie/28-create-env-and-activite.png)
+- [Install Cowrie Dependencies](screenshots/cowrie/29-install-requreiments.txt.png)
+- [Edit Cowrie Configuration File](screenshots/cowrie/30-edit-cowrie.cfg.png)
+- [Start Cowrie Honeypot](screenshots/cowrie/31-start-cowrie.png)
+
 
 ---
 
@@ -124,8 +149,13 @@ The following feeds were enabled to ingest high-quality threat intelligence:
 - Cowrie log file (`cowrie.json`) added to `ossec.conf`  
 - Agent forwards honeypot logs in real time  
 
-📸 **Screenshot:**  
-`Wazuh Agent Monitoring Cowrie Logs – Add Link Here`
+📸 Cowrie Log Collection:
+- [Add cowrie.json in ossec.conf](screenshots/cowrie/32-add-cowrie.json-in-ossec.conf.png)
+- [Restart Wazuh Agent](screenshots/cowrie/33-restart-agent.png)
+- [Create Custom Decoder for Cowrie](screenshots/cowrie/34-create-decoder-for-cowrie.png)
+- [Create Custom Rules for Cowrie](screenshots/cowrie/35-create-rules.png)
+- [Wazuh Agent Monitoring cowrie.json](screenshots/cowrie/36-show-agent-monitoring-cowrie.json.png)
+
 
 ---
 
@@ -135,8 +165,9 @@ The following feeds were enabled to ingest high-quality threat intelligence:
 - Attack traffic targeted Cowrie on port `2222`  
 - Generated high-volume malicious authentication attempts  
 
-📸 **Screenshot:**  
-`Hydra SSH Brute-force – Add Link Here`
+📸 Attack Simulation:
+- [SSH Brute-force Attack from Kali Linux](screenshots/attacks/37-attack-from-kali.png)
+
 
 ---
 
@@ -149,8 +180,10 @@ The following feeds were enabled to ingest high-quality threat intelligence:
   - Repeated authentication failures  
   - Suspicious login behavior  
 
-📸 **Screenshot:**  
-`Cowrie Alerts in Wazuh – Add Link Here`
+- [Raw Cowrie JSON Logs](screenshots/correlation/38-cowrie.json-logs.png)
+- [Cowrie Logs in Wazuh Dashboard](screenshots/correlation/39-cowrie-logs-in-wazuh-dashboard.png)
+- [Detailed Cowrie Event View](screenshots/correlation/40-cowrie-logs-details.png)
+
 
 ---
 
@@ -162,12 +195,11 @@ The following feeds were enabled to ingest high-quality threat intelligence:
   - Severity level  
 - Both malicious and non-malicious IPs observed  
 
-📸 **Screenshot:**  
-`MISP IOC Match Alert – Add Link Here`  
-
-📸 **Screenshot:**  
-`Non-Matching IP Alert – Add Link Here`
-
+- [MISP Logs in Wazuh](screenshots/correlation/41-misp-logs-wazuh.png)
+- [Cowrie + MISP Correlated Logs](screenshots/correlation/42-cowrie-and-misp-logs.png)
+- [Malicious IP Detected via MISP](screenshots/correlation/43-ip-malicous-log-in-wazuh-by-misp.png)
+- [IOC Match Alert in Wazuh](screenshots/correlation/44-IOC-match-logs-in-wazuh-by-misp.png)
+- [Normal Private IP (No IOC Match)](screenshots/correlation/45-normal-private-ip-logs-in-wazuh-by-misp.png)
 ---
 
 ## 📊 Analysis & Findings
