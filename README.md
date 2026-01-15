@@ -33,7 +33,7 @@ This lab simulates an enterprise SOC architecture where external intelligence an
 
 📸 Architecture Diagrams:
 - [Detailed SOC Architecture Diagram](screenshots/architecture/01-daigram.png)
-- [Simplified SOC Architecture Diagram](screenshots/architecture/02-simple daigram.png)
+- [Simplified SOC Architecture Diagram](screenshots/architecture/02-simple-daigram.png)
 
 
 ---
@@ -60,7 +60,7 @@ This lab simulates an enterprise SOC architecture where external intelligence an
 | Kali Linux | Attacker Machine |
 
 📸 Lab Environment:
-- [VirtualBox Lab Environment Setup](screenshots/environment/03-enviremantal setup.png)
+- [VirtualBox Lab Environment Setup](screenshots/environment/03-enviremantal-setup.png)
 
 
 ---
@@ -129,7 +129,7 @@ The following feeds were enabled to ingest high-quality threat intelligence:
 
 ### 🔹 Honeypot Deployment
 - Cowrie SSH honeypot deployed on Ubuntu Server  
-- SSH service enabled on port `2222`  
+- SSH service enabled on port `2222.`  
 - Python virtual environment used for dependency isolation  
 
 📸 Cowrie Installation & Setup:
