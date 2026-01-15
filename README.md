@@ -219,7 +219,24 @@ This section demonstrates how raw honeypot logs were transformed into actionable
 - [Malicious IP Detected via MISP](screenshots/correlation/43-ip-malicous-log-in-wazuh-by-misp.png)
 - [IOC Match Alert in Wazuh](screenshots/correlation/44-IOC-match-logs-in-wazuh-by-misp.png)
 - [Normal Private IP (No IOC Match)](screenshots/correlation/45-normal-private-ip-logs-in-wazuh-by-misp.png)
+
+
+  ---
+
+## 🧩 MITRE ATT&CK Mapping
+
+The detected attack activity and alerts in this lab were mapped to the MITRE ATT&CK framework to align with standard SOC threat classification.
+
+| Tactic | Technique ID | Technique Name | Evidence |
+|------|------------|---------------|---------|
+| Credential Access | T1110 | Brute Force | SSH brute-force attempts captured by Cowrie |
+| Lateral Movement | T1021 | Remote Services (SSH) | Unauthorized SSH access attempts |
+| Initial Access | T1078 | Valid Accounts (Simulated) | Repeated credential guessing behavior |
+
+This mapping helps us understand attacker intent, improve detection coverage, and standardize incident reporting.
+
 ---
+
 
 ## 📊 Analysis & Findings
 
