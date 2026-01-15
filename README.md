@@ -117,12 +117,13 @@ The following feeds were enabled to ingest high-quality threat intelligence:
 ---
 
 ## ⚙️ Wazuh Integration with MISP
-- Custom MISP integration script created in `/var/ossec/integrations`  
-- Wazuh configured to query MISP during event analysis  
+- Custom MISP integration script created in `/var/ossec/integrations.`  
+- Wazuh is configured to query MISP during event analysis  
 - Custom rules added to generate alerts on IOC matches  
 - Wazuh Manager restarted to apply changes  
 
 📸 MISP API & Wazuh Integration:
+- [Custom MISP Integration create](screenshots/misp/20-create-custom-misp.png)
 - [Custom MISP Integration Script Content](screenshots/misp/21-content-of-custom-misp.png)
 - [Add Integration Block in ossec.conf](screenshots/misp/22-add-integration-block-in-ossec.conf.png)
 - [Restart Wazuh Manager & Check Status](screenshots/misp/23-restart-manager-and-status.png)
