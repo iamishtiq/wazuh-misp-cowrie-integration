@@ -261,7 +261,7 @@ This integration demonstrates how:
 A detailed step-by-step implementation report, configurations, and explanations are available in:
 
 📄 **Full Documentation Report**  
-(See `Full Documentation Report.pdf` in this repository)
+(See `Complete Documentation lab by ishtiaq.pdf` in this repository)
 
 
 
@@ -270,5 +270,4 @@ A detailed step-by-step implementation report, configurations, and explanations 
 ## Created by:
 **Ishtiaq Rashid**  
 Cybersecurity | SOC Analyst Aspirant 
-Pakistan
 
