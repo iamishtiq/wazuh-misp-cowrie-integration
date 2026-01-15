@@ -151,7 +151,7 @@ The following feeds were enabled to ingest high-quality threat intelligence:
 
 ### 🔹 Log Collection with Wazuh Agent
 - Wazuh Agent installed on Cowrie server  
-- Cowrie log file (`cowrie.json`) added to `ossec.conf`  
+- Cowrie log file (`cowrie.json`) added to `ossec.conf.`  
 - Agent forwards honeypot logs in real time  
 
 📸 Cowrie Log Collection:
