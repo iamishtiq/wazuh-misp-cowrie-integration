@@ -267,8 +267,8 @@ A detailed step-by-step implementation report, configurations, and explanations 
 
 ---
 
-## 👨‍💻 Create by:
-**Ishtiaq “Wolf” Rashid**  
+## Created by:
+**Ishtiaq Rashid**  
 Cybersecurity | SOC Analyst Aspirant 
 Pakistan
 
